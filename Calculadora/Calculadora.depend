@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1586312396 source:c:\users\nahuel\downloads\lab y prog i 2020\repo 2020\programacion-y-laboratorio-i-2020\calculadora\main.c
+	<stdio.h>
+	<stdlib.h>
+
