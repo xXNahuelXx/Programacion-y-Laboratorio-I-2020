@@ -1,5 +1,14 @@
 # depslib dependency file v1.0
-1586312396 source:c:\users\nahuel\downloads\lab y prog i 2020\repo 2020\programacion-y-laboratorio-i-2020\calculadora\main.c
+1586389838 source:c:\users\nahuel\downloads\lab y prog i 2020\repo 2020\programacion-y-laboratorio-i-2020\calculadora\main.c
 	<stdio.h>
 	<stdlib.h>
+	"Functions.h"
+
+1586397183 source:c:\users\nahuel\downloads\lab y prog i 2020\repo 2020\programacion-y-laboratorio-i-2020\calculadora\functions.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	"Functions.h"
+
+1586386917 c:\users\nahuel\downloads\lab y prog i 2020\repo 2020\programacion-y-laboratorio-i-2020\calculadora\functions.h
 
