@@ -16,6 +16,9 @@ void menu()
     int fact1;
     int fact2;
     int auxInt;
+    int flag1=0;
+    int flag2=0;
+    int flag3=0;
 
     printf("CALCULADORA\n\n");
 
@@ -35,28 +38,47 @@ void menu()
         case 1:
             system("cls");
             num1=pedirNumero("Eligio opcion (1)\nIngrese un numero: ");
+            flag1=1;
             break;
         case 2:
             system("cls");
             num2=pedirNumero("Eligio opcion (2)\nIngrese un numero: ");
+            flag2=1;
             break;
         case 3:
-            printf("\nEligio opcion (3)\n");
-            printf("a)Calcular la suma (%.2f+%.2f)",num1,num2);
-            sum=suma(num1,num2);
-            printf("\nb)Calcular la resta (%.2f-%.2f)",num1,num2);
-            res=resta(num1,num2);
-            printf("\nc)Calcular la division (%.2f/%.2f)",num1,num2);
-            div=division(num1,num2);
-            printf("\nd)Calcular la multiplicacion (%.2f*%.2f)",num1,num2);
-            mult=multiplicacion(num1,num2);
-            printf("\ne)Calcular el factorial de (%d!) y (%d!)\n\n",(int)num1,(int)num2);
-            fact1=factorial((int)num1);
-            fact2=factorial((int)num2);
+            if(flag1==0 || flag2==0)
+            {
+                printf("\nError! Primero debe ingresar dos numeros\n\n!");
+            }
+            else
+            {
+                printf("\nEligio opcion (3)\n");
+                printf("a)Calcular la suma (%.2f+%.2f)",num1,num2);
+                sum=suma(num1,num2);
+                printf("\nb)Calcular la resta (%.2f-%.2f)",num1,num2);
+                res=resta(num1,num2);
+                printf("\nc)Calcular la division (%.2f/%.2f)",num1,num2);
+                div=division(num1,num2);
+                printf("\nd)Calcular la multiplicacion (%.2f*%.2f)",num1,num2);
+                mult=multiplicacion(num1,num2);
+                printf("\ne)Calcular el factorial de (%d!) y (%d!)\n\n",(int)num1,(int)num2);
+                fact1=factorial((int)num1);
+                fact2=factorial((int)num2);
+                flag3=1;
+            }
+
             break;
         case 4:
             system("cls");
-            informes(num1,num2,sum,res,mult,div,fact1,fact2,"Eligio opcion (4)");
+            if(flag1==0 || flag2==0 || flag3==0 )
+            {
+                printf("\nError! Primero debe ingresar dos numeros y luego calcular sus operaciones\n\n");
+            }
+            else
+            {
+                informes(num1,num2,sum,res,mult,div,fact1,fact2,"Eligio opcion (4)");
+
+            }
             break;
         case 5:
             break;
