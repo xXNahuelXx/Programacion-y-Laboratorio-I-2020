@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <windows.h>
 #include "Functions.h"
-
 
 void menu()
 {
@@ -19,14 +19,15 @@ void menu()
     int flag1=0;
     int flag2=0;
     int flag3=0;
-
-    printf("CALCULADORA\n\n");
+    char salir;
+    char aux;
 
     do
     {
-
-        printf("MENU DE OPCIONES\n\n");
-        printf("(1). Ingresar 1er operando (A=%.2f)\n",num1);
+        printf("===================================\n");
+        printf("*         MENU DE OPCIONES        *\n");
+        printf("===================================\n");
+        printf("\n(1). Ingresar 1er operando (A=%.2f)\n",num1);
         printf("(2). Ingresar 2do operando (B=%.2f)\n",num2);
         printf("(3). Calcular todas las operaciones\n");
         printf("(4). Informar resultados\n");
@@ -81,6 +82,20 @@ void menu()
             }
             break;
         case 5:
+            printf("\nSeguro desea salir? (s/n): ");
+            fflush(stdin);
+            scanf("%c",&aux);
+            salir=tolower(aux);
+
+            if(salir=='s')
+            {
+                printf("\nSalida con exito\n\n\n");
+                opcion=5;
+            }
+            else
+            {
+                opcion=0;
+            }
             break;
         default:
             fflush(stdin);
@@ -91,7 +106,6 @@ void menu()
                 printf("\nIngrese una opcion correcta!\n\n");
             }
             break;
-
         }
         system("pause");
         system("cls");
@@ -102,36 +116,28 @@ void menu()
 float suma(float numero1,float numero2)
 {
     float resultado;
-
     resultado=numero1+numero2;
-
     return resultado;
 }
 
 float resta(float numero1,float numero2)
 {
     float resultado;
-
     resultado=numero1-numero2;
-
     return resultado;
 }
 
 float multiplicacion(float numero1,float numero2)
 {
     float resultado;
-
     resultado=numero1*numero2;
-
     return resultado;
 }
 
 float division(float numero1,float numero2)
 {
     float resultado;
-
     resultado=numero1/numero2;
-
     return resultado;
 }
 
@@ -159,7 +165,6 @@ float pedirNumero(char mensaje[])
     float num;
     printf("%s",mensaje);
     scanf("%f",&num);
-
     return num;
 }
 
@@ -196,3 +201,41 @@ void informes(float num1,float num2,float resSum,float resRest,float resMult,flo
     }
 
 }
+
+void cambiarColor()
+{
+    system("COLOR 2");
+}
+
+void pantallaDeCarga()
+{
+    int i;
+    int time = 20;
+    printf("Cargando calculadora... ");
+    for(i = 0; i < 100; i ++)
+    {
+        printf("(%d)", i);
+        Sleep(time);
+        if(i > 9)
+        {
+            printf("\b\b\b\b");
+        }
+        else
+        {
+            printf("\b\b\b");
+        }
+    }
+    system("cls");
+    printf("===============================================\n");
+    printf("                Cargado con exito!            *\n");
+    printf("===============================================\n");
+    printf("             Ghigliotti Ivan Nahuel (1-C)     *\n");
+    printf("===============================================\n");
+    printf("Profesor: German Scarafilo y Octavio Villegas *\n");
+    printf("===============================================\n");
+    printf("\n");
+    system("pause");
+    system("cls");
+}
+
+

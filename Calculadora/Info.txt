@@ -5,3 +5,5 @@ V1.1.0 Se agregaron funciones con las operaciones basicas.
 V1.2.1 Se agrego menu, operacion factorial, funcion informar, validacion de division y factorial.
 V1.3.1 Se agregaron bibliotecas y se cambio el menu a una funcion. Hay porblemas de validacion con el menu y falta agregar validacion de entrada a opcion 3 y 4 y falta comentar las funciones. 
 V1.3.2 Se agregaron pequeñas validaciones en el menu. Falta una validacion mas en el menu.
+V1.3.3 Se agrego la ultima validacion de salida en el menu, tambien se agrego una funcion que cambia el color de la consola. Ademas se agregaron comentarios a las funciones y una funcion de carga de pantalla.
+Calculadora terminada, 0 errores, 0 warnings. 
