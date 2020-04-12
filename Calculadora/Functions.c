@@ -9,9 +9,9 @@ void menu()
     float num1;
     float num2;
     int opcion;
-    int sum;
-    int res;
-    int mult;
+    float sum;
+    float res;
+    float mult;
     float div;
     int fact1;
     int fact2;
@@ -170,7 +170,6 @@ float pedirNumero(char mensaje[])
 
 void informes(float num1,float num2,float resSum,float resRest,float resMult,float resDiv,int resFact1, int resFact2, char mensaje[])
 {
-
     printf("\n%s",mensaje);
     printf("\na) El resultado de %.2f+%.2f es: %.2f",num1,num2,resSum);
     printf("\nb) El resultado de %.2f-%.2f es: %.2f",num1,num2,resRest);
@@ -185,7 +184,7 @@ void informes(float num1,float num2,float resSum,float resRest,float resMult,flo
     }
     if(num1<0)
     {
-        printf("e)\nERROR!...(%d!)-No es posible calcular el factorial de un numero negativo.\nIngrese otro numero en el menu principal.",(int)num1);
+        printf("\ne)ERROR!...(%d!)-No es posible calcular el factorial de un numero negativo.\nIngrese otro numero en el menu principal.",(int)num1);
     }
     else
     {
@@ -199,7 +198,6 @@ void informes(float num1,float num2,float resSum,float resRest,float resMult,flo
     {
         printf("\n   El factorial de %d! es: %d\n\n",(int)num2,resFact2);
     }
-
 }
 
 void cambiarColor()
@@ -237,5 +235,3 @@ void pantallaDeCarga()
     system("pause");
     system("cls");
 }
-
-
