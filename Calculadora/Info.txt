@@ -8,3 +8,4 @@ V1.3.2 Se agregaron pequeñas validaciones en el menu. Falta una validacion mas e
 V1.3.3 Se agrego la ultima validacion de salida en el menu, tambien se agrego una funcion que cambia el color de la consola. Ademas se agregaron comentarios a las funciones y una funcion de carga de pantalla.
 Calculadora terminada, 0 errores, 0 warnings. 
 v1.3.4 Correciones minimas.
+v1.3.5 Optimizacion de funciones suma, resta, multiplicacion y division.

@@ -8,19 +8,19 @@ void menu()
 {
     float num1;
     float num2;
-    int opcion;
-    float sum;
+    int opcion;  /// Opcion para el menu.
+    float sum;   /*************************************************************/
     float res;
-    float mult;
+    float mult;   /**VARIABLES PARA GUARDAR EL RESULTADO DE RESPECTIVA FUNCION**/
     float div;
     int fact1;
-    int fact2;
+    int fact2;   /*************************************************************/
     int auxInt;
-    int flag1=0;
-    int flag2=0;
-    int flag3=0;
+    int flag1=0; ///
+    int flag2=0; /// Declaro estos 3 flags para validar que no se ingrese en la opcion 3 y 4 si no se tienen los mumeros ingresados y los calculos hechos.
+    int flag3=0; ///
+    char aux;    /// Auxiliar para tomar la opcion de salir o no en la opcion 5 y pasarlo a minuscula para luego asigarlo a la variable: salir.
     char salir;
-    char aux;
 
     do
     {
@@ -115,30 +115,22 @@ void menu()
 
 float suma(float numero1,float numero2)
 {
-    float resultado;
-    resultado=numero1+numero2;
-    return resultado;
+    return numero1+numero2;
 }
 
 float resta(float numero1,float numero2)
 {
-    float resultado;
-    resultado=numero1-numero2;
-    return resultado;
+    return numero1-numero2;
 }
 
 float multiplicacion(float numero1,float numero2)
 {
-    float resultado;
-    resultado=numero1*numero2;
-    return resultado;
+    return numero1*numero2;
 }
 
 float division(float numero1,float numero2)
 {
-    float resultado;
-    resultado=numero1/numero2;
-    return resultado;
+    return numero1/numero2;
 }
 
 unsigned long long int factorial(int numero1)
@@ -227,7 +219,7 @@ void pantallaDeCarga()
     printf("===============================================\n");
     printf("                Cargado con exito!            *\n");
     printf("===============================================\n");
-    printf("             Ghigliotti Ivan Nahuel (1-C)     *\n");
+    printf("Alumno:      Ghigliotti Ivan Nahuel (1-C)     *\n");
     printf("===============================================\n");
     printf("Profesor: German Scarafilo y Octavio Villegas *\n");
     printf("===============================================\n");

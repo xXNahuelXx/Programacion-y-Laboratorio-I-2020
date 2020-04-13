@@ -4,7 +4,6 @@
 #include <windows.h>
 #include "Functions.h"
 
-
 int main()
 {
     cambiarColor(); ///Cambia color de consola.
@@ -12,5 +11,3 @@ int main()
     menu(); ///Llamada al menu.
     return 0;
 }
-
-
